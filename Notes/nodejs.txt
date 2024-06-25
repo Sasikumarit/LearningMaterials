@@ -1,0 +1,73 @@
+1.What is Node.js?
+Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to run JavaScript on the server side.
+
+2.What is npm?
+npm (Node Package Manager) is a package manager for Node.js packages or modules. It allows developers to install, share, and manage dependencies.
+
+3.How do you create a simple server in Node.js?
+
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello, World!\n');
+});
+
+server.listen(3000, '127.0.0.1', () => {
+    console.log('Server running at http://127.0.0.1:3000/');
+});
+
+4.What are CommonJS modules?
+CommonJS is a module formatting system used in Node.js where each file is treated as a separate module. Modules are imported using require and exported using module.exports.
+
+Intermediate Questions
+5.What is the event loop in Node.js?
+The event loop is a mechanism that handles asynchronous operations in Node.js. It allows Node.js to perform non-blocking I/O operations by offloading tasks to the system kernel whenever possible.
+
+6.Explain the purpose of package.json and what kind of information it contains.
+package.json is a file in the root directory of a Node.js project that holds metadata about the project. It includes information like project name, version, dependencies, scripts, and author information.
+
+7.What is middleware in Express.js?
+Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. Middleware can execute code, modify the request and response objects, end the request-response cycle, and call the next middleware function.
+
+8.How do you handle asynchronous operations in Node.js?
+Asynchronous operations in Node.js can be handled using callbacks, promises, async/await, and the event-driven model.
+
+Advanced Questions
+9.What are streams in Node.js, and how do they work?
+Streams are instances of EventEmitter and allow working with large amounts of data in a more efficient way by processing data piece by piece, rather than loading everything into memory at once. There are four types of streams in Node.js: Readable, Writable, Duplex, and Transform.
+
+10.How does the cluster module work in Node.js?
+The cluster module allows you to create child processes (workers) that share the same server port, taking advantage of multi-core systems. Each worker runs in its own process, but can share the same server port.
+
+11.Explain the concept of “callback hell” and how you can avoid it.
+"Callback hell" refers to the situation where multiple nested callbacks make the code difficult to read and maintain. It can be avoided by using named functions, modularizing code, or using promises and async/await.
+
+12.What is the purpose of the process object in Node.js?
+The process object is a global object that provides information about, and control over, the current Node.js process. It can be used to get environment variables, handle signals, and interact with the process’s standard input/output streams.
+
+Practical Questions
+13.Write a function that reads a file asynchronously and logs its content to the console.
+const fs = require('fs');
+function readFileAsync(filePath) {
+    fs.readFile(filePath, 'utf8', (err, data) => {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        console.log(data);
+    });
+}
+readFileAsync('example.txt');
+
+14.Explain how you would handle error logging in a Node.js application.
+Error logging can be handled using logging libraries like Winston or Morgan. Errors should be captured using try-catch blocks or global error handlers, and logs should include details like timestamps, error messages, and stack traces.
+
+15.How can you secure a Node.js application?
+To secure a Node.js application, follow practices such as validating user input, using HTTPS, securing dependencies, protecting against SQL injection, using environment variables for sensitive data, and implementing proper authentication and authorization mechanisms.
+
+Behavioral Questions
+16.Describe a challenging problem you faced while working with Node.js and how you solved it.
+17.How do you keep up with the latest developments in Node.js and JavaScript?
+18.Can you describe a project where you used Node.js and the architecture you implemented?
