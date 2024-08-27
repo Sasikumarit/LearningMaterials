@@ -1,0 +1,109 @@
+.NET Core 8 Courseware: 3 Weeks Plan
+
+Week 1:
+
+
+What is REST and the principles of REST
+https://restfulapi.net/
+
+Overview of ASP.NET Core
+Why choose ASP.NET Core?
+           https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-8.0
+
+Choose between ASP.NET 4.x and ASP.NET Core
+           https://learn.microsoft.com/en-us/aspnet/core/fundamentals/choose-aspnet-framework?view=aspnetcore-8.0
+
+.NET vs. .NET Framework for server apps     
+           https://learn.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server?toc=%2Faspnet%2Fcore%2Ftoc.json&bc=%2Faspnet%2Fcore%2Fbreadcrumb%2Ftoc.json&view=aspnetcore-8.0
+
+Create a web API with ASP.NET Core
+API Controller Creation with POST, GET, PUT, DELETE
+                     https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0&tabs=visual-studio
+
+App startup in ASP.NET Core
+For Web API with controllers
+          https://learn.microsoft.com/en-us/aspnet/core/fundamentals/startup?view=aspnetcore-8.0
+
+Use Startup with the new minimal hosting model
+           https://learn.microsoft.com/en-us/aspnet/core/migration/50-to-60?view=aspnetcore-8.0#smhm
+
+Web server implementations in ASP.NET Core:             
+Understand Kestrel and Other Servers
+                     https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/?view=aspnetcore-8.0&tabs=windows
+
+Use multiple environments in ASP.NET Core
+Use of launchSetting.json
+                     https://learn.microsoft.com/en-us/aspnet/core/fundamentals/environments?view=aspnetcore-8.0
+
+ASP.NET Core Middleware:
+What is Middleware
+Create a middleware pipeline with WebApplication
+Use, Run, Map extension methods
+Middleware order
+Built-in middleware
+                     https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-8.0
+
+Custom middleware
+           https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/write?view=aspnetcore-8.0
+
+Dependency Injection:
+DI in ASP.NET Core
+
+                     https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-8.0
+
+                     Lifetime and registration options
+
+                     https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-8.0#lifetime-and-registration-options
+
+ 
+
+Week 2:
+
+Routing:
+https://dotnettutorials.net/lesson/routing-in-asp-net-core-web-api/
+Swagger/OpenAPI Integration:
+https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-8.0&tabs=visual-studio
+https://www.c-sharpcorner.com/article/integrate-swagger-ui-in-asp-net-core-web-api/
+HTTP Status codes:
+https://dotnettutorials.net/lesson/http-status-codes-in-asp-net-core-web-api/
+Global exception handling:
+https://www.milanjovanovic.tech/blog/global-error-handling-in-aspnetcore-8
+Action filters:
+https://www.c-sharpcorner.com/article/action-filters-in-asp-net-core/
+Action return types:
+https://learn.microsoft.com/en-us/aspnet/core/web-api/action-return-types?view=aspnetcore-8.0
+Model bindings and validation using FluentValidation
+https://medium.com/@nirajranasinghe/building-maintainable-robust-and-scalable-web-apis-with-model-binding-ac9b30cffe89
+https://ravindradevrani.medium.com/fluent-validation-in-net-core-8-0-c748da274204
+DTOs and AutoMapper
+https://dev.to/moe23/net-6-automapper-data-transfer-objects-dtos-49e
+EF Core
+https://medium.com/@codewithankitsahu/implement-entity-framework-a-code-first-approach-in-net-8-api-80b06d219373
+CQRS, MediatR, Repository Pattern:
+https://medium.com/@jaydeepvpatil225/cqrs-and-mediatr-pattern-implementation-using-net-core-6-web-api-47d76da907d7
+Configurations with option pattern (appsettings.json):
+https://www.milanjovanovic.tech/blog/how-to-use-the-options-pattern-in-asp-net-core-7
+Week3:
+
+Authentication and Authorization:
+https://medium.com/bina-nusantara-it-division/implementing-jwt-in-asp-net-core-6-0-web-api-c-3a396fa8cfeb
+Enable CORS for all operations and only to specific endpoint:
+https://learn.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-8.0
+Unit tests, Integration tests using xUnit, Moq
+https://learn.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-8.0
+https://dev.to/moe23/learn-unit-test-with-net-6-with-xunit-and-moq-k9i
+Introducing eShopOnContainers reference app: https://learn.microsoft.com/en-us/dotnet/architecture/cloud-native/introduce-eshoponcontainers-reference-app
+Clean Architecture: https://juldhais.net/clean-architecture-in-asp-net-core-web-api-4e5ef0b96f99
+Implementing Domain-Driven Design (DDD) in ASP.NET Core Applications: 
+          https://medium.com/@ulomaobilookenyi/implementing-domain-driven-design-ddd-in-asp-net-core-applications-4be68b642424
+          https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/ddd-oriented-microservice
+SOLID principles: https://medium.com/@jeslurrahman/understanding-solid-principles-in-net-c-a-practical-guide-with-code-examples-2e759010974e
+HttpClientFactory: https://code-maze.com/using-httpclientfactory-in-asp-net-core-applications/
+POC:
+
+Create Web API application for employee with CRUD operations, POST, GET(all), GET (single record), PUT, DELETE
+Validate API endpoints for required fields
+Configuration for application settings, database settings
+Save data in database
+Use concepts like FluentValidation, CQRS, MediatR, Repository Pattern, AutoMapper
+Write Unit and Integration tests
